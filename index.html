@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gemandco — message us on WhatsApp to order or ask a question." />
+  <title>Gemandco | Shop with confidence</title>
+  <style>
+    :root { --ink:#18231f; --paper:#fbfaf5; --leaf:#184b3b; --lime:#d8f17b; --sand:#f1ecdf; --muted:#607068; }
+    * { box-sizing:border-box; } body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:var(--paper); }
+    a { color:inherit; text-decoration:none; } .wrap { width:min(1120px, calc(100% - 40px)); margin:auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:24px 0; } .logo { font-family:Georgia,serif; font-weight:bold; font-size:24px; letter-spacing:-1px; } .logo i { color:#4c8065; font-style:normal; }
+    .navlink { font-size:14px; font-weight:bold; border-bottom:1px solid var(--ink); padding-bottom:3px; }
+    .hero { padding:72px 0 88px; display:grid; grid-template-columns:1.15fr .85fr; gap:45px; align-items:center; }
+    .eyebrow { text-transform:uppercase; letter-spacing:2px; font-size:11px; font-weight:bold; color:var(--leaf); }
+    h1 { font: clamp(50px, 7vw, 92px)/.95 Georgia, serif; letter-spacing:-4px; margin:18px 0 25px; max-width:700px; }
+    .lead { color:var(--muted); font-size:18px; line-height:1.55; max-width:540px; } .buttons { display:flex; gap:12px; flex-wrap:wrap; margin-top:30px; }
+    .button { display:inline-flex; gap:9px; align-items:center; padding:15px 21px; border-radius:99px; font-size:14px; font-weight:bold; } .primary { background:var(--leaf); color:white; } .secondary { border:1px solid #b6c0b9; }
+    .art { aspect-ratio:1; background:var(--sand); border-radius:48% 52% 44% 56% / 55% 40% 60% 45%; position:relative; overflow:hidden; }
+    .orb { position:absolute; border-radius:50%; } .orb.one { width:66%; height:66%; right:-4%; top:8%; background:var(--lime); } .orb.two { width:42%; height:42%; left:9%; bottom:9%; background:#3d7160; } .orb.three { width:22%; height:22%; left:38%; top:33%; background:#ffce72; box-shadow:0 0 0 18px rgba(255,255,255,.45); }
+    .art-label { position:absolute; bottom:8%; right:8%; background:var(--paper); padding:12px 15px; font:16px Georgia,serif; }
+    .strip { background:var(--leaf); color:white; padding:17px 0; overflow:hidden; white-space:nowrap; font:15px Georgia,serif; letter-spacing:.4px; }
+    .strip span { margin-right:44px; } .section { padding:92px 0; } h2 { font:clamp(33px,4vw,52px)/1 Georgia,serif; letter-spacing:-2px; margin:0 0 17px; }
+    .section-intro { max-width:540px; color:var(--muted); line-height:1.55; } .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:38px; }
+    .card { padding:27px; min-height:220px; background:#fff; border:1px solid #e8e4d9; border-radius:8px; display:flex; flex-direction:column; justify-content:space-between; } .card-num { color:#4c8065; font-family:Georgia,serif; font-size:19px; } h3 { font:25px Georgia,serif; margin:24px 0 8px; } .card p { color:var(--muted); line-height:1.45; margin:0; font-size:14px; }
+    .products { background:#f1ecdf; padding:80px 0; } .product-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:36px; } .product { background:white; padding:15px; border-radius:8px; } .product-image { aspect-ratio:1; border-radius:5px; display:grid; place-items:center; background:radial-gradient(circle at 65% 28%, #f9dc8a 0 5%, transparent 6%), radial-gradient(circle at 45% 45%, #e6b5c3 0 17%, transparent 18%), #dce5dc; color:#184b3b; font:34px Georgia,serif; } .product h3 { margin:18px 0 7px; font-size:23px; } .product p { color:var(--muted); line-height:1.45; margin:0; font-size:14px; } .product .view { display:inline-block; margin-top:19px; font-size:13px; font-weight:bold; border-bottom:1px solid currentColor; padding-bottom:3px; }
+    .cta { margin:0 0 75px; background:var(--lime); padding:65px clamp(28px,7vw,88px); border-radius:12px; display:flex; align-items:center; justify-content:space-between; gap:30px; } .cta h2 { max-width:540px; } footer { border-top:1px solid #dedbd0; padding:26px 0 40px; display:flex; justify-content:space-between; color:var(--muted); font-size:13px; }
+    @media(max-width:720px) { .hero { grid-template-columns:1fr; padding-top:40px; } .art { width:min(100%,420px); } h1 { letter-spacing:-2.5px; } .cards, .product-grid { grid-template-columns:1fr; } .cta, footer { display:block; } .cta .button { margin-top:25px; } footer p + p { margin-top:12px; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav><a class="logo" href="#top">gem<i>&amp;</i>co</a><a class="navlink" href="#contact">Contact us</a></nav>
+    <section class="hero" id="top">
+      <div><div class="eyebrow">Welcome to Gemandco</div><h1>Good things, made simple.</h1><p class="lead">Discover what Gemandco has to offer. Send us a message on WhatsApp for availability, prices, and personal help with your order.</p><div class="buttons"><a class="button primary wa-link" href="#contact">✦ Chat on WhatsApp</a><a class="button secondary" href="#about">Find out more</a></div></div>
+      <div class="art" aria-label="Gemandco abstract brand image"><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div><div class="art-label">Selected with care</div></div>
+    </section>
+  </main>
+  <div class="strip"><span>PERSONAL SERVICE</span><span>•</span><span>WHATSAPP ORDERS</span><span>•</span><span>QUICK RESPONSES</span><span>•</span><span>PERSONAL SERVICE</span><span>•</span><span>WHATSAPP ORDERS</span></div>
+  <section class="section wrap" id="about"><div class="eyebrow">How it works</div><h2>From a quick message<br>to the right choice.</h2><p class="section-intro">We keep every step straightforward. Tell us what you’re looking for, and we’ll take it from there.</p><div class="cards"><article class="card"><div class="card-num">01</div><div><h3>Say hello</h3><p>Start a WhatsApp chat whenever it suits you.</p></div></article><article class="card"><div class="card-num">02</div><div><h3>Get guidance</h3><p>Ask about options, pricing, and availability before you decide.</p></div></article><article class="card"><div class="card-num">03</div><div><h3>Order easily</h3><p>We’ll help you arrange the details in one friendly conversation.</p></div></article></div></section>
+  <section class="products" id="products"><div class="wrap"><div class="eyebrow">Featured item</div><h2>Shop the collection.</h2><p class="section-intro">Browse a selection from Gem &amp; Co. Every item opens directly in WhatsApp.</p><div class="product-grid"><article class="product"><div class="product-image">✦</div><h3>Crystal ring-0103</h3><p>A signature Gem &amp; Co. piece. View the listing to ask about price and availability.</p><a class="view" href="https://wa.me/p/26303716085969278/918985776775" target="_blank" rel="noopener">View on WhatsApp ↗</a></article></div></div></section>
+  <section class="wrap" id="contact"><div class="cta"><div><div class="eyebrow">We’re ready when you are</div><h2>Have a question? Let’s talk.</h2><p class="section-intro">Message Gemandco on WhatsApp for a fast, personal response.</p></div><a class="button primary wa-link" href="#contact">Open WhatsApp ↗</a></div></section>
+  <footer class="wrap"><p>© 2026 Gemandco. All rights reserved.</p><p>Built for simple conversations.</p></footer>
+  <script>
+    // Gemandco WhatsApp Business catalogue.
+    const whatsappCatalogue = 'https://wa.me/c/918985776775';
+    document.querySelectorAll('.wa-link').forEach(link => link.href = whatsappCatalogue);
+  </script>
+</body>
+</html>
